@@ -1,0 +1,31 @@
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#aa').repeat(400).toggleClass('blink');
+ 
+	setInterval(function() {
+      $('#aa').html(getTime());
+}, 5000);
+});
+	
+</script>
+<style>
+*{
+	padding: 0px;
+	margin:0px;
+}
+#box{
+	margin : auto;
+	border:solid 1px black;
+	width:500px;
+	height:100px;
+}
+</style>
+<!--<div id="aa"></div><br>-->
+<div id="box">
+	<input type="button" style="float: left;" value="prev" id="prev">
+	<div idid="image" style="float: left; width: 400px; border:solid 1px green">
+		
+	</div>
+	<input type="button" id="next" style="float: left" value="next">
+</div>
